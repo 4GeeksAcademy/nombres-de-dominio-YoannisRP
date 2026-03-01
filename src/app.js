@@ -1,11 +1,16 @@
-import "bootstrap";
-import "./style.css";
+let pronoun = ["the", "our"];
+let adj = ["great", "big"];
+let noun = ["jogger", "raccon"];
+let extensiones = [".com", ".net", ".es", ".io"];
+
+for (let p of pronoun) {
+  for (let a of adj) {
+    for (let n of noun) {
+      for (let ext of extensiones) {
+      console.log(p + a + n + ext);
+      }
+    }
+  }
+}
 
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
